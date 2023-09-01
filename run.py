@@ -49,6 +49,7 @@ def predict(lpb_p, mic_p, out_p: str = ""):
     ckpt = torch.load("model.pth")
     net.load_state_dict(ckpt)
     net.to(device)
+    net.eval()
 
     ref = fread(lpb_p)
     mic = fread(mic_p)

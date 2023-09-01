@@ -127,11 +127,11 @@ class MSDP_CRN(nn.Module):
                 )
 
         self.rnns_r = nn.Sequential(
-            FTLSTM(cnn_num[-1] // 2, rnn_hidden_num),
+            FTLSTM_RESNET(cnn_num[-1] // 2, rnn_hidden_num),
             FTLSTM_RESNET(cnn_num[-1] // 2, rnn_hidden_num),
         )
         self.rnns_i = nn.Sequential(
-            FTLSTM(cnn_num[-1] // 2, rnn_hidden_num),
+            FTLSTM_RESNET(cnn_num[-1] // 2, rnn_hidden_num),
             FTLSTM_RESNET(cnn_num[-1] // 2, rnn_hidden_num),
         )
 
