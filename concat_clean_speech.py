@@ -185,12 +185,12 @@ def parse_args():
     parser.add_argument(
         "--ref_lpb_dir",
         help="ref and lpb wav audios dir",
-        default="/home/deepni/datasets/test/split",
+        default="samples",
     )
     parser.add_argument(
         "--out_dir",
         help="output dir for test dataset",
-        default="/home/deepni/datasets/test_dset",
+        default="/home/deepni/datasets/ttt",
     )
     return parser.parse_args()
 
